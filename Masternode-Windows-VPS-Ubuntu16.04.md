@@ -330,6 +330,8 @@ MN01 45.77.15.154:26210 8DBMdmareMGqcc61HN5Jsr33w3U1AX7ezAsnmJHoMXhwam85uHE 27f1
 
 * If it is setup and activated correctly, you will see 'status: 4'.
 
+![Example-Status4](https://i.imgur.com/1TnwujQ.jpg)
+
 ***
 
 ## Congratulations! You have successfully setup your ZENZO/ZNZ Masternode!
