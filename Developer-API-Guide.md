@@ -2,6 +2,17 @@
 
 Account related endpoints
 
+## Account Information
+
+Returns an object of the API Account's data. E.G: Username, ID, profit / sales from game trading and purchases
+
+`x-www-urlencoded POST https://arcade.zenzo.io/api/v1/account`
+
+Body:
+```
+api_key: your_api_key
+```
+
 ## Ping
 
 `x-www-urlencoded POST https://arcade.zenzo.io/api/v1/ping`
