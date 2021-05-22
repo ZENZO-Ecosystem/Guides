@@ -3,7 +3,7 @@ ZENZO Installation and Setup Guides (Wallet, Masternodes, Forge, VPS)
 
 ## ZENZO Forge Node
 * [ZENZO Forge Node Installation Guide (Linux)](https://github.com/ZENZO-Ecosystem/Guides/blob/master/ZENZO%20Forge%20Node%20Install%20Guide.md)
-* [ZENZO Forge Node Installation Guide for Beginners (Wallet + VPS)](https://github.com/ZENZO-Ecosystem/Guides/blob/master/ZENZO%20Forge%20Node%20Install%20Guide%20(VULTR).md)
+* [ZENZO Forge Node Installation Guide for Beginners (Linux)](https://github.com/ZENZO-Ecosystem/Guides/blob/master/ZENZO%20Forge%20Node%20Install%20Guide%20(VULTR).md)
 ***
 
 ## Contact & Support
