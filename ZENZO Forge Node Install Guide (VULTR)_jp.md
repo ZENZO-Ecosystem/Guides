@@ -143,37 +143,37 @@
   * `./zenzod -daemon`
 ***
 
-***ここからStep 9*** 
-* Check the progress of your installion and synchronization by typing this command:
+***ステップ 9*** 
+* 次のコマンドを実行し、インストールと同期の進行状況を確認します:
   * `./zenzo-cli getinfo`
 ***
 
-***Step 10*** 
-* Check the "blocks" to make sure that it matches with the [ZENZO Explorer](https://chainz.cryptoid.info/znz/). 
-* Once it is fully synchronized and matches the official block explorer, you may proceed to install the ZENZO Forge in the next section.
+***ステップ 10*** 
+* [blocks]をチェックし、 [ZENZO Explorer](https://chainz.cryptoid.info/znz/)とブロックの進行状況が一致することを確認します。
+* 完全に同期され、公式のブロックエクスプローラーと一致したら、次のセクションでZENZO Forgeのインストールに進みます。
 
 ![Example-LinuxDownload](https://imgur.com/MHSgoDk.png)
 ***
 
-***Step 11*** 
-* Generate a ZNZ Address by typing in the following command:
+***ステップ 11*** 
+* 次のコマンドを実行して、ZNZアドレスを生成します:
   * `./zenzo-cli getnewaddress`
 
 ![Example-ZNZ-Address](https://imgur.com/1NZo1VP.png)
 ***
 
-***Step 12*** 
-* Stop the client and shutdown the wallet by typing in this command:
+***ステップ 12*** 
+* 次のコマンドを実行して、クライアントを停止し、ウォレットをシャットダウンします:
   * `./zenzo-cli stop`
 ***
 
-***Step 13*** 
-* Open the `zenzo.conf` file by typing in the following command:
+***ステップ 13*** 
+* 次のコマンドを実行し、`zenzo.conf`ファイルを開きます:
   * `nano /root/.zenzo/zenzo.conf`
 ***
 
-***Step 14*** 
-* Add new parameters to the `zenzo.conf` file to match the following text:
+***ステップ 14*** 
+* `zenzo.conf`ファイルに新しいパラメーターを追加します。各パラメーターの内容は下記テキストの通りです:
 ```
 rpcuser=user
 rpcpassword=forgepass
@@ -189,10 +189,10 @@ listen=1
 ![Example-ZENZO-Conf](https://imgur.com/41QTLuW.png)
 ***
 
-***Step 15*** 
-* Save the update `zenzo.conf` additions by typing `CTRL + O` and then `Enter`.
-* After saving, exit by typing `CTRL + X`.
-* Start back up your ZENZO Core Wallet by typing `./zenzod -daemon`.
+***ステップ 15*** 
+* `CTRL + O`を押してから`Enter`キーを押し、内容を追加した`zenzo.conf`を保存します。    ./zenzod -daemonと入力して、ZENZO Coreウォレットのバックアップを開始します。
+* 保存した後、`CTRL + X`を押して終了します。
+* `./zenzod -daemon`と入力して、ZENZO Coreウォレットのバックアップを開始します。
 ***
 
 ## Section D: Downloading and Installing the [ZENZO Forge](https://github.com/ZENZO-Ecosystem/zenzo-forge.git)
