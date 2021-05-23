@@ -34,35 +34,35 @@
 ![Example-Type](https://imgur.com/R4F3OPC.png)
 ***
 
-***ステップ　次ここから 4*** 
-* Choose a server location.
+***ステップ　4*** 
+* サーバーのロケーションを選択します。
  
 ![Example-Location](https://imgur.com/MUEkQej.png)
 ***
 
-***Step 5***
-* Choose a server type: Ubuntu 18.04 (or the latest stable build).
+***ステップ 5***
+* サーバータイプを選択します：Ubuntu 18.04（または最新の安定バージョンを選択します）
  
 ![Example-OS](https://imgur.com/gw5uqAp.png)
 ***
 
 ***Step 6***
-* Choose a server size: $10 per month package (55 GB SSD).
+* サーバーサイズを選択します：ここでは例として55GB SSD、月額$10のパッケージを選択します。
   * 1 CPU
-  * 2048MB Memory
-  * 2000GB Bandwidth
+  * 2048MB メモリ
+  * 2000GB 帯域幅
  
 ![Example-OS](https://imgur.com/9kX0n3H.png)
 ***
 
-***Step 7*** 
-* Set a Server Hostname & Label (name it whatever you want).
+***ステップ 7*** 
+* サーバーのホストネームとラベルを設定します。（任意の名前をつけます）
  
 ![Example-hostname](https://imgur.com/fWcz4Pp.png)
 ***
 
-***Step 8***
-* Click "Deploy now".
+***ステップ 8***
+* [Deploy Now]をクリックします。
 
 ![Example-Deploy](https://i.imgur.com/4qpYuH0.png)
 ***
