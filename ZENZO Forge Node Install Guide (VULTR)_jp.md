@@ -195,11 +195,11 @@ listen=1
 * `./zenzod -daemon`と入力して、ZENZO Coreウォレットのバックアップを開始します。
 ***
 
-## Section D: Downloading and Installing the [ZENZO Forge](https://github.com/ZENZO-Ecosystem/zenzo-forge.git)
+## Section D: [ZENZO Forge](https://github.com/ZENZO-Ecosystem/zenzo-forge.git)のダウンロードとインストール
 
-***Step 1***
-* Run the following commands to install Node.js (required for the ZENZO Forge).
-* Make sure the commands have finished installing before running the next command.
+***ステップ 1***
+* 次のコマンドを実行して、Node.jsをインストールします。（ZENZO Forgeを動かすために必要となります）
+* 実行する前に、次のコマンドのインストールが完了していることを確認してください。
   * `sudo apt-get install -y curl`
   * `curl -fsSL https://deb.nodesource.com/setup_15.x | sudo -E bash -`
   * `sudo apt-get install -y nodejs`
@@ -208,9 +208,9 @@ listen=1
   * `npm i pm2 -g`
 ***
 
-***Step 2***
-* Install and run the ZENZO Forge by typing the following commands.
-* Make sure the commands have finished installing before running the next command.
+***ステップ 2***
+* 次のコマンドを入力し、ZENZO Forgeをインストールして実行します。
+* 実行する前に、次のコマンドのインストールが完了していることを確認してください。
   * `git clone https://github.com/ZENZO-Ecosystem/zenzo-forge.git forge`
   * `cd forge`
   * `npm i`
@@ -219,35 +219,35 @@ listen=1
   * `pm2 stop 0`
 ***
 
-***Step 3***
-* Create `config.json` file and add your `ZNZ Address` (Section C, Step 11).
+***ステップ 3***
+* `config.json`ファイルを作成し、`ZNZ Address`を追加します（セクションC、ステップ11で生成したZNZアドレス）
   * `nano /var/local/forge/data/config.json`
 
-* Copy and paste this information, with your edits (user, pass, ZNZ Address).
-* (Remember to change your `user` and `pass` to match your `rpcusername` and `rpcpassword` in ZENZO Core)
+* 上記の内容をコピーし、編集内容（ユーザー、パス、ZNZアドレス）とともに貼り付けます。
+* （ZENZO Coreの`rpcusername`と`rpcpassword`に一致するように、`user`と`pass`を編集してください）
 ```
 {"fullnode":true,"wallet":{"datadir":"/root/.zenzo/","user":"user","pass":"forgepass","port":26211,"address":"ZrKZd3zuUk1StAUqPteBS1vVtEH7FjaPa9"},"forgeport":9002,"maxinvalidscore":25,"debug":"me,validations,net"}
 ```
-* Save the updates by typing `CTRL + O` and then `Enter`. 
-* Exit by tying `CTRL + X`.
+* `CTRL + O`を押してから`Enter`キーを押し、更新した内容を保存します。
+* `CTRL + X`を押して終了します。
 
 ![Example-JSON-File](https://imgur.com/C5hmG6m.png)
 ***
 
-***Step 4*** 
-* Run your ZENZO Forge client by typing the following command:
+***ステップ 4*** 
+* 次のコマンドを入力し、ZENZO Forgeクライアントを実行します:
   * `pm2 start 0`
 
 ![Example-Run-Forge](https://imgur.com/3iGKx9e.png)
 ***
 
-### :confetti_ball:Congratulations, your ZENZO Forge Node is now active!
+### :confetti_ball:おめでとうございます！これでZENZO Forgeノードがアクティブになりました！
 
 
 ![ZENZOForgeGraphic](https://imgur.com/CUQqe6X.png)
 
-# Contact & Support
+# お問い合わせ & サポート
 ***
 
-* For any help or questions, please join the [**Official ZENZO Discord**](https://discord.com/invite/kwBD3pk).
-  * Join [#forge-help](https://discord.gg/A9vd4VXUxx) if you have any questions regarding the ZENZO Forge.
+* 内容についての質問、ヘルプが必要な場合は、[**公式 ZENZO Discord**](https://discord.com/invite/kwBD3pk)に参加してください。
+  * ZENZO Forgeについて質問がある場合は、Discord内チャンネル[#forge-help](https://discord.gg/A9vd4VXUxx)でお聞きください。
