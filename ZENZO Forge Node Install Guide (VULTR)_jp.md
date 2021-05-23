@@ -1,8 +1,8 @@
 ![ZENZOForgeLogo](https://imgur.com/IeqNCeF.png)
-# ZENZO Forge Full Node Install Guide (Ubuntu 18.04)
+# ZENZO Forgeフルノードインストールガイド（Ubuntu 18.04）
 
-###### In this guide, you will learn how to set up a ZENZO Forge Node on a Linux server (Ubuntu 18.04) with hosting from VULTR. 
-###### Learn more about the [ZENZO Forge](https://zenzo-ecosystem.medium.com/a-new-nft-standard-emerges-zfi-1-e09e701b4729).
+###### このガイドでは、VULTRからのホスティングを使用してLinuxサーバー（Ubuntu 18.04）にZENZO Forgeノードをセットアップする方法を学びます。
+###### ZENZO Forgeの詳細については[こちら](https://zenzo-ecosystem.medium.com/a-new-nft-standard-emerges-zfi-1-e09e701b4729)をご覧ください。Learn more about the [ZENZO Forge](https://zenzo-ecosystem.medium.com/a-new-nft-standard-emerges-zfi-1-e09e701b4729).
 
 ***
 ## Requirements
