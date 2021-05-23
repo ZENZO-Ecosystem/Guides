@@ -67,17 +67,17 @@
 ![Example-Deploy](https://i.imgur.com/4qpYuH0.png)
 ***
 
-## Section B: Downloading and Installing [Bitvise](https://www.bitvise.com/ssh-client-download) 
+## Section B: [Bitvise](https://www.bitvise.com/ssh-client-download)のダウンロードとインストール
 
-***Step 1***
-* Download Bitvise [here](https://dl.bitvise.com/BvSshClient-Inst.exe).
+***ステップ 1***
+* [こちら](https://dl.bitvise.com/BvSshClient-Inst.exe)からBitviseをダウンロードしてください。
 ***
-***Step 2***
-* Open the [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe) application (.exe file) and click yes to all changes it requires).
+***ステップ 2***
+* [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe)アプリケーション（.exeファイル）を開き、必要なすべての変更に対して[Yes]をクリックします）。
 ***
 
-***Step 3***
-* Click the "I agree to accept all of the terms of this License Agreement" and then click "Install".
+***ステップ 3***
+* [I agree to accept all of the terms of this License Agreement]（この使用許諾契約のすべての条項に同意します）にチェックを入れ、[Install]をクリックしてインストールを開始します。
 
 ![Example-BitviseInstall](https://imgur.com/fRfKFM9.png)
 ***
