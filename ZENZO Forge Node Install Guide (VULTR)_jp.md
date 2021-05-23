@@ -21,7 +21,7 @@
 ## Section A: [VULTR](https://www.vultr.com/?ref=7517156)でVPSを作成する
 
 ***ステップ 1***
-* [VULTR](https://www.vultr.com/?ref=7517156)VULTRに登録してアカウントを作成します。
+* [VULTR](https://www.vultr.com/?ref=7517156)に登録してアカウントを作成します。
 ***
 
 ***ステップ 2***
@@ -82,53 +82,56 @@
 ![Example-BitviseInstall](https://imgur.com/fRfKFM9.png)
 ***
 
-## Section C: Connecting to the VPS via Bitvise and Installing ZENZO Core
+## Section C: Bitviseを使ったVPSへの接続とZENZO Core Walletのインストール
 
-***Step 1***
-* Open up the Bitvise Client.
+***ステップ 1***
+* Bitviseクライアントを起動します。
 
 ![Example-VULTR](https://imgur.com/SKcfkZe.png)
 ***
 
-***Step 2***
-* Navigate to your newly deployed VPS on VULTR (Left Dashboard: Products -> Your Server Name -> Overview).
+***ステップ 2***
+* VULTRに新しくデプロイしたVPSに移動します。（左側のダッシュボードから：[Products]-> [サーバー名]-> [Overview]）
 
 ![Example-VULTR](https://imgur.com/edPttTG.png)
 ***
 
-***Step 3*** 
-* Copy the "IP Address" and paste it into the "Host" field in Bitvise.
-* Copy the "Username" and paste it into the "Username" field in Bitvise.
-* Copy the "Password" and paste it into the "Password" field in Bitvise (click "Store encrypted password in profile" first)
+***ステップ 3*** 
+
+    
+    
+* [IPアドレス]をコピーして、Bitviseの[ホスト]フィールドに貼り付けます。
+* [ユーザー名]をコピーして、Bitviseの[ユーザー名]フィールドに貼り付けます。
+* [Password]をコピーして、Bitviseの[Password]フィールドに貼り付けます（最初に[Store encrypted password in profile]（暗号化されたパスワードをプロファイルに保存する）をクリックします。
 
 ![Example-VULTR_VPS_Details](https://imgur.com/r3IsZ58.png)
 ***
 
-***Step 4*** 
-* Once you have filled in the correct information, then click Login.
+***ステップ 4*** 
+* 正確に情報を入力し、[Login]をクリックします。
 
 ![Example-Bitvise Login](https://imgur.com/oIWBjkl.png)
 ***
 
-***Step 5*** 
-* A box will pop up and ask you to "Accept and Save" or "Accept for This Session", click either one.
+***ステップ 5*** 
+* [Accept and Save]（承諾して保存する）、または[Accept for This Session]（このセッションを承諾する）というメッセージがポップアップで表示されるので、いずれかをクリックします。
 ***
 
-***Step 6*** 
-* Now you are logged in to your server. Click the "New terminal console" icon.
+***ステップ 6*** 
+* これでサーバーにログインしました。[New terminal console]アイコンをクリックします。
 
 ![Example-New_Terminal](https://imgur.com/iDrb69z.png)
 ***
 
-***Step 7*** 
-* With your terminal open, you can begin installing ZENZO Core with the following commands in the next step.
+***ステップ 7*** 
+* ターミナルを開き、ZENZO Coreのインストールを開始します。手順や使用するコマンドは次ステップ以降で解説します。
 
 ![Example-New_Terminal](https://imgur.com/WFa91yD.png)
 ***
 
-***Step 8*** 
-* Install ZENZO Core and run the client. Run the following commands, one after another. 
-* Make sure the commands have finished installing before running the next command.
+***ステップ 8*** 
+* ZENZO Core Walletをインストールして実行します。以下のコマンドを実行していきます。
+* 実行する前に、コマンドのインストールが完了していることをまず確認してください。
   * `sudo apt-get update -y && sudo apt-get upgrade -y`
   * `wget https://github.com/ZENZO-Ecosystem/ZENZO-Core/releases/download/v2.1.0/zenzo-2.1.0-x86_64-linux-gnu.tar.gz`
   * `tar -xvf zenzo-2.1.0-x86_64-linux-gnu.tar.gz`
@@ -140,7 +143,7 @@
   * `./zenzod -daemon`
 ***
 
-***Step 9*** 
+***ここからStep 9*** 
 * Check the progress of your installion and synchronization by typing this command:
   * `./zenzo-cli getinfo`
 ***
