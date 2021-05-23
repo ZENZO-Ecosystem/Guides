@@ -2,39 +2,39 @@
 # ZENZO Forgeフルノードインストールガイド（Ubuntu 18.04）
 
 ###### このガイドでは、VULTRからのホスティングを使用してLinuxサーバー（Ubuntu 18.04）にZENZO Forgeノードをセットアップする方法を学びます。
-###### ZENZO Forgeの詳細については[こちら](https://zenzo-ecosystem.medium.com/a-new-nft-standard-emerges-zfi-1-e09e701b4729)をご覧ください。Learn more about the [ZENZO Forge](https://zenzo-ecosystem.medium.com/a-new-nft-standard-emerges-zfi-1-e09e701b4729).
+###### ZENZO Forgeの詳細については[こちら](https://zenzo-ecosystem.medium.com/a-new-nft-standard-emerges-zfi-1-e09e701b4729)をご覧ください。
 
 ***
-## Requirements
-1) **[ZENZO (ZNZ) Linux Wallet](https://github.com/Zenzo-Ecosystem/ZENZO-Core/releases)**
-2) **$10 USD per month** (VPS Hosting Fee)
-3) **[VULTR VPS](https://www.vultr.com/?ref=7517156)** (Running Linux with Ubuntu 18.04 OS installed)
-4) **SSH Client ([Bitvise](https://www.bitvise.com/ssh-client-download)**)
+## 必要になるもの
+1) **[ZENZO (ZNZ) Linuxウォレット](https://github.com/Zenzo-Ecosystem/ZENZO-Core/releases)**
+2) **月額10USD** (VPSホスティング料金)
+3) **[VULTR VPS](https://www.vultr.com/?ref=7517156)** (Ubuntu 18.04 OSがインストールされたLinuxマシンでの実行)
+4) **SSHクライアント ([Bitvise](https://www.bitvise.com/ssh-client-download)**)
 ***
-## Contents
-* **Section A**: Creating the VPS on [VULTR](https://www.vultr.com/?ref=7517156)
-* **Section B**: Downloading & Installing [Bitvise](https://www.bitvise.com/ssh-client-download)
-* **Section C**: Connecting to the VPS via Bitvise and Installing [ZENZO Core](https://github.com/ZENZO-Ecosystem/ZENZO-Core/releases/download/v2.1.0/zenzo-2.1.0-x86_64-linux-gnu.tar.gz)
-* **Section D**: Downloading & Installing [ZENZO Forge](https://github.com/ZENZO-Ecosystem/zenzo-forge.git)
-***
-
-## Section A: Creating the VPS within [VULTR](https://www.vultr.com/?ref=7517156) 
-
-***Step 1***
-* Register at [VULTR](https://www.vultr.com/?ref=7517156).
+## 本ガイドの内容
+* **Section A**: [VULTR](https://www.vultr.com/?ref=7517156)でVPSを作成する
+* **Section B**: [Bitvise](https://www.bitvise.com/ssh-client-download)のダウンロードとインストール
+* **Section C**: Bitviseを使ったVPSへの接続と[ZENZO Core](https://github.com/ZENZO-Ecosystem/ZENZO-Core/releases/download/v2.1.0/zenzo-2.1.0-x86_64-linux-gnu.tar.gz) Walletのインストール
+* **Section D**: [ZENZO Forge](https://github.com/ZENZO-Ecosystem/zenzo-forge.git)のダウンロードとインストール
 ***
 
-***Step 2***
-* After you have added funds to your account go [here](https://my.vultr.com/deploy/) to create your Server.
+## Section A: [VULTR](https://www.vultr.com/?ref=7517156)でVPSを作成する
+
+***ステップ 1***
+* [VULTR](https://www.vultr.com/?ref=7517156)VULTRに登録してアカウントを作成します。
 ***
 
-***Step 3*** 
-* Choose a server type (Cloud Compute).
+***ステップ 2***
+* アカウントに代金を追加します。その後、[こちら](https://my.vultr.com/deploy/)へ移動してサーバーを作成します。
+***
+
+***ステップ 3*** 
+* サーバータイプ（Cloud Compute）を選択します。
  
 ![Example-Type](https://imgur.com/R4F3OPC.png)
 ***
 
-***Step 4*** 
+***ステップ　次ここから 4*** 
 * Choose a server location.
  
 ![Example-Location](https://imgur.com/MUEkQej.png)
