@@ -1,7 +1,7 @@
 ![ZENZOForgeLogo](https://imgur.com/IeqNCeF.png)
 # ZENZO Forgeフルノードインストールガイド (Ubuntu 18.04)
 
-###### このガイドでは、VPSとBitviseを使用してLinuxサーバー（Ubuntu 18.04）にZENZO Forgeノードをセットアップする方法を学びます。****
+###### このガイドでは、VPSとBitviseを使用してLinuxサーバー（Ubuntu 18.04）にZENZO Forgeノードをセットアップする方法を学びます。
 ###### ZENZO Forgeの詳細については[こちら](https://zenzo-ecosystem.medium.com/a-new-nft-standard-emerges-zfi-1-e09e701b4729)をご覧ください。
 
 ***
@@ -34,7 +34,7 @@
 ***ステップ 3*** 
 * [IP Address]をコピーし、Bitviseの[Host]フィールドに貼り付けます。
 * [Username]をコピーし、Bitviseの[Username]フィールドに貼り付けます。
-* [Password]をコピーし、Bitviseの[Password]フィールドに貼り付けます（最初に[Store encrypted password in profile]（暗号化されたパスワードをプロファイルに保存する）にチェックを入れます。
+* [Password]をコピーし、Bitviseの[Password]フィールドに貼り付けます（最初に[Store encrypted password in profile]〈暗号化されたパスワードをプロファイルに保存する〉にチェックを入れます。
 
 ![Example-VULTR_VPS_Details](https://imgur.com/r3IsZ58.png)
 ***
@@ -155,7 +155,7 @@ listen=1
 * `config.json`ファイルを作成し、`ZNZ Address`を追加します（セクションA、ステップ11で生成したZNZアドレス）
   * `nano /var/local/forge/data/config.json`
 
-* 上記の内容をコピーし、編集内容（ユーザー、パス、ZNZアドレス）とともに貼り付けます。
+* 下記の内容をコピーし、編集内容（ユーザー、パス、ZNZアドレス）とともに貼り付けます。
 * （ZENZO Coreの`rpcusername`と`rpcpassword`に一致するように、`user`と`pass`を編集してください）
 ```
 {"fullnode":true,"wallet":{"datadir":"/root/.zenzo/","user":"user","pass":"forgepass","port":26211,"address":"ZrKZd3zuUk1StAUqPteBS1vVtEH7FjaPa9"},"forgeport":9002,"maxinvalidscore":25,"debug":"me,validations,net"}
