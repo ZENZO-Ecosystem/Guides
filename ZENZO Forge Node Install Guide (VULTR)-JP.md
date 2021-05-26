@@ -102,7 +102,7 @@
     
 * [IPアドレス]をコピーして、Bitviseの[ホスト]フィールドに貼り付けます。
 * [ユーザー名]をコピーして、Bitviseの[ユーザー名]フィールドに貼り付けます。
-* [Password]をコピーして、Bitviseの[Password]フィールドに貼り付けます（最初に[Store encrypted password in profile]（暗号化されたパスワードをプロファイルに保存する）をクリックします。
+* [Password]をコピーして、Bitviseの[Password]フィールドに貼り付けます（最初に[Store encrypted password in profile]〈暗号化されたパスワードをプロファイルに保存する〉をクリックします。）
 
 ![Example-VULTR_VPS_Details](https://imgur.com/r3IsZ58.png)
 ***
@@ -223,7 +223,7 @@ listen=1
 * `config.json`ファイルを作成し、`ZNZ Address`を追加します（セクションC、ステップ11で生成したZNZアドレス）
   * `nano /var/local/forge/data/config.json`
 
-* 上記の内容をコピーし、編集内容（ユーザー、パス、ZNZアドレス）とともに貼り付けます。
+* 下記の内容をコピーし、編集内容（ユーザー、パス、ZNZアドレス）とともに貼り付けます。
 * （ZENZO Coreの`rpcusername`と`rpcpassword`に一致するように、`user`と`pass`を編集してください）
 ```
 {"fullnode":true,"wallet":{"datadir":"/root/.zenzo/","user":"user","pass":"forgepass","port":26211,"address":"ZrKZd3zuUk1StAUqPteBS1vVtEH7FjaPa9"},"forgeport":9002,"maxinvalidscore":25,"debug":"me,validations,net"}
