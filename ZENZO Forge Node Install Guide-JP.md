@@ -1,108 +1,40 @@
 ![ZENZOForgeLogo](https://imgur.com/IeqNCeF.png)
-# ZENZO Forgeフルノードインストールガイド（Ubuntu 18.04）
+# ZENZO Forgeフルノードインストールガイド (Ubuntu 18.04)
 
-###### このガイドでは、VULTRからのホスティングを使用してLinuxサーバー（Ubuntu 18.04）にZENZO Forgeノードをセットアップする方法を学びます。
+###### このガイドでは、VPSとBitviseを使用してLinuxサーバー（Ubuntu 18.04）にZENZO Forgeノードをセットアップする方法を学びます。
 ###### ZENZO Forgeの詳細については[こちら](https://zenzo-ecosystem.medium.com/a-new-nft-standard-emerges-zfi-1-e09e701b4729)をご覧ください。
 
 ***
 ## 必要になるもの
-1) **[ZENZO (ZNZ) Linuxウォレット](https://github.com/Zenzo-Ecosystem/ZENZO-Core/releases)**
-2) **月額10USD** (VPSホスティング料金)
-3) **[VULTR VPS](https://www.vultr.com/?ref=7517156)** (Ubuntu 18.04 OSがインストールされたLinuxマシンでの実行)
-4) **SSHクライアント ([Bitvise](https://www.bitvise.com/ssh-client-download)**)
+1) **VPS** + **SSHクライアント**
+2) **[ZENZO (ZNZ) Linuxウォレット](https://github.com/Zenzo-Ecosystem/ZENZO-Core/releases)**
+3) **[ZENZO Forge](https://github.com/ZENZO-Ecosystem/zenzo-forge)**
 ***
+
 ## 本ガイドの内容
-* **Section A**: [VULTR](https://www.vultr.com/?ref=7517156)でVPSを作成する
-* **Section B**: [Bitvise](https://www.bitvise.com/ssh-client-download)のダウンロードとインストール
-* **Section C**: Bitviseを使ったVPSへの接続と[ZENZO Core](https://github.com/ZENZO-Ecosystem/ZENZO-Core/releases/download/v2.1.0/zenzo-2.1.0-x86_64-linux-gnu.tar.gz) Walletのインストール
-* **Section D**: [ZENZO Forge](https://github.com/ZENZO-Ecosystem/zenzo-forge.git)のダウンロードとインストール
+* **Section A**: Bitvise経由でVPSに接続し、[ZENZO Core](https://github.com/ZENZO-Ecosystem/ZENZO-Core/releases/download/v2.1.0/zenzo-2.1.0-x86_64-linux-gnu.tar.gz) Walletをインストールする
+* **Section B**: [ZENZO Forge](https://github.com/ZENZO-Ecosystem/zenzo-forge.git)のダウンロードとインストール
 ***
 
-## Section A: [VULTR](https://www.vultr.com/?ref=7517156)でVPSを作成する
+
+## Section A: Bitvise経由でVPSに接続し、ZENZO Core Walletをインストールする
 
 ***ステップ 1***
-* [VULTR](https://www.vultr.com/?ref=7517156)に登録してアカウントを作成します。
-***
-
-***ステップ 2***
-* アカウントに代金を追加します。その後、[こちら](https://my.vultr.com/deploy/)へ移動してサーバーを作成します。
-***
-
-***ステップ 3*** 
-* サーバータイプ（Cloud Compute）を選択します。
- 
-![Example-Type](https://imgur.com/R4F3OPC.png)
-***
-
-***ステップ　4*** 
-* サーバーのロケーションを選択します。
- 
-![Example-Location](https://imgur.com/MUEkQej.png)
-***
-
-***ステップ 5***
-* サーバータイプを選択します：Ubuntu 18.04（または最新の安定バージョンを選択します）
- 
-![Example-OS](https://imgur.com/gw5uqAp.png)
-***
-
-***Step 6***
-* サーバーサイズを選択します：ここでは例として55GB SSD、月額$10のパッケージを選択します。
-  * 1 CPU
-  * 2048MB メモリ
-  * 2000GB 帯域幅
- 
-![Example-OS](https://imgur.com/9kX0n3H.png)
-***
-
-***ステップ 7*** 
-* サーバーのホストネームとラベルを設定します。（任意の名前をつけます）
- 
-![Example-hostname](https://imgur.com/fWcz4Pp.png)
-***
-
-***ステップ 8***
-* [Deploy Now]をクリックします。
-
-![Example-Deploy](https://i.imgur.com/4qpYuH0.png)
-***
-
-## Section B: [Bitvise](https://www.bitvise.com/ssh-client-download)のダウンロードとインストール
-
-***ステップ 1***
-* [こちら](https://dl.bitvise.com/BvSshClient-Inst.exe)からBitviseをダウンロードしてください。
-***
-***ステップ 2***
-* [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe)アプリケーション（.exeファイル）を開き、必要なすべての変更に対して[Yes]をクリックします）。
-***
-
-***ステップ 3***
-* [I agree to accept all of the terms of this License Agreement]（この使用許諾契約のすべての条項に同意します）にチェックを入れ、[Install]をクリックしてインストールを開始します。
-
-![Example-BitviseInstall](https://imgur.com/fRfKFM9.png)
-***
-
-## Section C: Bitviseを使ったVPSへの接続とZENZO Core Walletのインストール
-
-***ステップ 1***
-* Bitviseクライアントを起動します。
+* Bitviseクライアントを起動する。
 
 ![Example-VULTR](https://imgur.com/SKcfkZe.png)
 ***
 
 ***ステップ 2***
-* VULTRに新しくデプロイしたVPSに移動します。（左側のダッシュボードから：[Products]-> [サーバー名]-> [Overview]）
+* VPSに移動して、サーバーの情報を取得します。
 
 ![Example-VULTR](https://imgur.com/edPttTG.png)
 ***
 
 ***ステップ 3*** 
-
-    
-    
-* [IPアドレス]をコピーして、Bitviseの[ホスト]フィールドに貼り付けます。
-* [ユーザー名]をコピーして、Bitviseの[ユーザー名]フィールドに貼り付けます。
-* [Password]をコピーして、Bitviseの[Password]フィールドに貼り付けます（最初に[Store encrypted password in profile]〈暗号化されたパスワードをプロファイルに保存する〉をクリックします。）
+* [IP Address]をコピーし、Bitviseの[Host]フィールドに貼り付けます。
+* [Username]をコピーし、Bitviseの[Username]フィールドに貼り付けます。
+* [Password]をコピーし、Bitviseの[Password]フィールドに貼り付けます（最初に[Store encrypted password in profile]〈暗号化されたパスワードをプロファイルに保存する〉にチェックを入れます。
 
 ![Example-VULTR_VPS_Details](https://imgur.com/r3IsZ58.png)
 ***
@@ -130,7 +62,7 @@
 ***
 
 ***ステップ 8*** 
-* ZENZO Core Walletをインストールして実行します。以下のコマンドを実行していきます。
+* ZENZO Core Walletをインストールして実行します。以下のコマンドを順次実行していきます。
 * 実行する前に、コマンドのインストールが完了していることをまず確認してください。
   * `sudo apt-get update -y && sudo apt-get upgrade -y`
   * `wget https://github.com/ZENZO-Ecosystem/ZENZO-Core/releases/download/v2.1.0/zenzo-2.1.0-x86_64-linux-gnu.tar.gz`
@@ -190,12 +122,12 @@ listen=1
 ***
 
 ***ステップ 15*** 
-* `CTRL + O`を押してから`Enter`キーを押し、内容を追加した`zenzo.conf`を保存します。
+* `CTRL + O`を押してから`Enter`キーを押し、内容を追加した`zenzo.conf`を上書き保存します。
 * 保存した後、`CTRL + X`を押して終了します。
 * `./zenzod -daemon`と入力して、ZENZO Coreウォレットのバックアップを開始します。
 ***
 
-## Section D: [ZENZO Forge](https://github.com/ZENZO-Ecosystem/zenzo-forge.git)のダウンロードとインストール
+## Section B: [ZENZO Forge](https://github.com/ZENZO-Ecosystem/zenzo-forge.git)のダウンロードとインストール
 
 ***ステップ 1***
 * 次のコマンドを実行して、Node.jsをインストールします。（ZENZO Forgeを動かすために必要となります）
@@ -220,7 +152,7 @@ listen=1
 ***
 
 ***ステップ 3***
-* `config.json`ファイルを作成し、`ZNZ Address`を追加します（セクションC、ステップ11で生成したZNZアドレス）
+* `config.json`ファイルを作成し、`ZNZ Address`を追加します（セクションA、ステップ11で生成したZNZアドレス）
   * `nano /var/local/forge/data/config.json`
 
 * 下記の内容をコピーし、編集内容（ユーザー、パス、ZNZアドレス）とともに貼り付けます。
