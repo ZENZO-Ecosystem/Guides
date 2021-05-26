@@ -190,7 +190,7 @@ listen=1
 ***
 
 ***ステップ 15*** 
-* `CTRL + O`を押してから`Enter`キーを押し、内容を追加した`zenzo.conf`を保存します。    ./zenzod -daemonと入力して、ZENZO Coreウォレットのバックアップを開始します。
+* `CTRL + O`を押してから`Enter`キーを押し、内容を追加した`zenzo.conf`を保存します。
 * 保存した後、`CTRL + X`を押して終了します。
 * `./zenzod -daemon`と入力して、ZENZO Coreウォレットのバックアップを開始します。
 ***
