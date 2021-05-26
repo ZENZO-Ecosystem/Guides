@@ -57,7 +57,7 @@
 
 ***ステップ 7*** 
 * ターミナルを開き、ZENZO Coreのインストールを開始します。手順や使用するコマンドは次ステップ以降で解説します。
-* 
+
 ![Example-New_Terminal](https://imgur.com/WFa91yD.png)
 ***
 
