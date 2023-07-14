@@ -2,7 +2,7 @@
 ZENZO Installation and Setup Guides (Wallet, Masternodes, VPS)
 
 ## ZENZO Masternode Guides
-* [Masternode Installation Guide (Linux)](https://github.com/ZENZO-Ecosystem/Guides/blob/master/Masternode-Windows-VPS-Ubuntu16.04.md)
+* [Masternode Installation Guide (Windows & Linux)](https://github.com/ZENZO-Ecosystem/Guides/blob/master/Masternode-Windows-VPS-Ubuntu16.04.md)
 ***
 
 ## Contact & Support
